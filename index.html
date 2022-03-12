@@ -7,17 +7,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
     <script
-      src="https://kit.fontawesome.com/9117a3110e.js"
+      src="https://kit.fontawesome.com/fe5d5ec7ed.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
+    <nav class="navbar">
+      <div class="brand-title">GG</div>
+      <a href="#" class="toggle-button">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li>
+            <a href="#"><span>Home</span></a>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
     <header>
       <div class="hero-wrapper">
         <div class="hero-content">
@@ -26,8 +43,11 @@
             <br />
             I'm a front-end developer based in Italy.
           </h1>
+
           <div class="button">
-            <a href="#">View my work <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#"
+              >View my work <i class="fa-solid fa-arrow-right arrow"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -42,5 +62,6 @@
         </p>
       </div>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
