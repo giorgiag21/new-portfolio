@@ -1,0 +1,47 @@
+@media (max-width: 400px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .logo {
+    margin: 1.5rem;
+  }
+
+  .toggle-button {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+    position: absolute;
+    top: 86px;
+    width: 45%;
+    margin-left: 55%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-links li {
+    text-align: right;
+    background-color: var(--dark-branding-color);
+  }
+
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+    transform: scale(1, 1);
+    flex-basis: 100%;
+    flex-grow: 1;
+  }
+}
