@@ -206,9 +206,60 @@ p {
 }
 
 .project-wrapper {
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   border: 1px solid var(--light-branding-color);
+  height: 16rem;
+  width: 16rem;
+  margin: 1rem;
+  background-image: linear-gradient(
+    to top,
+    var(--highlight-color) 50%,
+    transparent 50%
+  );
+  background-size: 200% 200%;
+  background-position: top;
+  transition: all 0.3s;
+  color: rgba(91, 232, 201, 1);
+}
+
+.project-wrapper a {
+  text-decoration: none;
+  color: var(--light-branding-color);
+  transition: all 0.3s;
+}
+
+.project-wrapper:hover {
+  cursor: pointer;
+  background-image: linear-gradient(
+    to top,
+    var(--highlight-color) 51%,
+    transparent 50%
+  );
+  background-position: 0 100%;
+  transition: all 0.3s;
+  color: var(--background-color);
+}
+
+.project-wrapper:hover a {
+  color: var(--background-color);
+}
+
+.project-title {
+  font-size: 18px;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.project-description {
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+/* FOOTER */
+.footer {
   background-color: var(--dark-branding-color);
-  height: 18rem;
-  width: 18rem;
+  padding: 3rem;
+}
+.footer p {
+  margin: 0;
 }
