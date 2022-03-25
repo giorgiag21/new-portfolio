@@ -296,10 +296,6 @@ textarea::-webkit-scrollbar-thumb {
   background-color: var(--highlight-color);
 }
 
-.center {
-  text-align: center;
-}
-
 input[type="submit"] {
   margin-top: 30px;
   width: 90%;
@@ -316,19 +312,6 @@ input[type="submit"]:hover,
 input[type="submit"]:focus {
   color: var(--background-color);
   background-color: var(--highlight-color);
-}
-
-.error {
-  color: var(--highlight-color);
-  text-align: left;
-}
-
-.error-border {
-  border-bottom: 1px solid var(--highlight-color);
-}
-
-#success {
-  color: var(--highlight-color);
 }
 
 /* FOOTER */
