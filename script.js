@@ -23,6 +23,8 @@ window.addEventListener("scroll", () => {
   if (window.pageYOffset > offsetY) {
     navbar.classList.remove("active");
     navbarLinks.classList.remove("active");
+    toggleButton.classList.remove("open");
+    menuOpen = false;
   } else {
     navbar.classList.add("active");
   }
