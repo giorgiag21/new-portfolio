@@ -36,6 +36,12 @@ p {
   color: var(--light-branding-color);
   position: fixed;
   width: 100%;
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in;
+}
+
+.navbar.active {
+  transform: translateY(0);
 }
 
 .logo {
@@ -183,6 +189,7 @@ p {
   margin-top: 1rem;
   display: flex;
   justify-content: space-around;
+
   font-size: 3rem;
   color: var(--highlight-color);
 }
