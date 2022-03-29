@@ -259,6 +259,21 @@ p {
 
 .link-icon {
   display: none;
+  color: var(--highlight-color);
+}
+
+.stay-tuned-message {
+  display: flex;
+  justify-content: center;
+}
+
+.stay-tuned-message p {
+  color: var(--background-color);
+  background-color: var(--highlight-color);
+  max-width: 500px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0.5rem;
 }
 
 /* CONTACT */
