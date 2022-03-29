@@ -30,14 +30,22 @@ p {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem 2rem;
+  padding: 2px 20px;
   align-items: center;
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
   color: var(--light-branding-color);
   position: fixed;
   width: 100%;
   transform: translateY(-100%);
   transition: all 0.3s ease-in;
+  background-image: linear-gradient(
+    90deg,
+    var(--background-color),
+    #173647,
+    var(--background-color)
+  );
+  background-size: 200%;
+  animation: bg-animation 5s infinite alternate;
 }
 
 .navbar.active {
@@ -67,7 +75,7 @@ p {
 .navbar-links li {
   list-style: none;
   padding: 1rem;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .navbar-links a {
@@ -75,7 +83,7 @@ p {
   color: var(--light-branding-color);
   display: block;
   background-image: linear-gradient(
-    var(--background-color) 75%,
+    transparent 75%,
     var(--highlight-color) 25%
   );
   background-size: 0;
@@ -102,6 +110,26 @@ p {
 }
 
 /* HERO SECTION */
+#hero {
+  background-image: linear-gradient(
+    90deg,
+    var(--background-color),
+    #173647,
+    var(--background-color)
+  );
+  background-size: 200%;
+  animation: bg-animation 5s infinite alternate;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
 .hero-wrapper {
   height: 100vh;
   width: 100vw;
