@@ -6,6 +6,10 @@
   --main-font: "Montserrat", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -24,6 +28,37 @@ h3,
 p {
   color: var(--light-branding-color);
   font-weight: 400;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.slide-in {
+  transform: translateY(50%);
+  opacity: 0;
+}
+
+.slide-in-first {
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+}
+
+.slide-in-second {
+  transition: opacity 250ms ease-in, transform 800ms ease-in;
+}
+
+.slide-in-third {
+  transition: opacity 250ms ease-in, transform 1200ms ease-in;
+}
+
+.slide-in.appear {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 /* NAVBAR */

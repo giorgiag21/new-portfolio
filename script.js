@@ -40,3 +40,19 @@ for (let i = 0; i < contactIcon.length; i++) {
     contactIcon[i].classList.remove("fa-bounce");
   });
 }
+
+const sliders = document.querySelectorAll(".slide-in");
+
+const appearOnScroll = new IntersectionObserver(function (entries) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("appear");
+    }
+  });
+});
+
+sliders.forEach((slider) => {
+  appearOnScroll.observe(slider);
+});
