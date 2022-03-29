@@ -150,6 +150,7 @@ p {
   padding: 2rem 5rem;
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 
 .about-wrapper {
@@ -174,24 +175,23 @@ p {
   color: var(--dark-branding-color);
 }
 
+.icons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  font-size: 3rem;
+  color: var(--highlight-color);
+}
+
 .photo-wrapper {
   width: 25%;
 }
 
 .photo-wrapper img {
-  max-width: 100%;
+  max-width: 280px;
   height: auto;
   border: 1px solid var(--dark-branding-color);
   box-shadow: 15px 15px rgba(91, 232, 201, 1);
-}
-
-.icons {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: space-around;
-
-  font-size: 3rem;
-  color: var(--highlight-color);
 }
 
 /* WORK SECTION */
@@ -257,10 +257,15 @@ p {
   font-size: 15px;
 }
 
+.link-icon {
+  display: none;
+}
+
 /* CONTACT */
 #contact {
   padding: 3rem;
 }
+
 form {
   max-width: 400px;
   width: 90%;
