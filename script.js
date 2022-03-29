@@ -1,4 +1,3 @@
-// NAVBAR
 const toggleButton = document.querySelector(".toggle-button");
 const navbarLinks = document.querySelector(".navbar-links");
 let menuOpen = false;

@@ -48,14 +48,6 @@
     font-size: 20px;
     padding: 25px 0;
     background-color: var(--dark-branding-color);
-    /* background-image: linear-gradient(
-      90deg,
-      var(--background-color),
-      #173647,
-      var(--background-color)
-    );
-    background-size: 200%;
-    animation: bg-animation 5s infinite alternate; */
   }
 
   .navbar-links li a {
