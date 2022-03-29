@@ -34,6 +34,7 @@ p {
   align-items: center;
   color: var(--light-branding-color);
   position: fixed;
+  z-index: 2;
   width: 100%;
   transform: translateY(-100%);
   transition: all 0.3s ease-in;
@@ -132,6 +133,7 @@ p {
 .hero-content {
   color: #8892b0;
   position: relative;
+  z-index: 1;
 }
 
 .highlight {
