@@ -40,7 +40,7 @@ p {
 }
 
 .slide-in {
-  transform: translateY(50%);
+  transform: translateY(30%);
   opacity: 0;
 }
 
